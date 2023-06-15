@@ -9,6 +9,13 @@ import ColorList from './ColorList'
 import Slots from './Slots'
 import ShoppingList from './ShoppingList'
 import PropertyList from './PropertyList'
+import Clicker from './Clicker'
+import Clicker1 from './Clicker1'
+import Counter from './Counter'
+import Toggler from './Toggler'
+import ToggleCounter from './ToggleCounter'
+import ColorBox from './ColorBox/Colorbox'
+import ColorBoxes from './ColorBox/ColorBoxes'
 
 // const data = [
 //   {id: 1, item: "eggs", quantity: 12, completed: false},
@@ -26,10 +33,33 @@ const properties = [
   { id: 129035, name: "Gold Miner Campground", rating: 4.69, price: 96},
 ]
 
+const colors = [
+  "#E53935",
+  "#E91E63",
+  "#9C27B0",
+  "#673AB7",
+  "#3F51B5",
+  "#2196F3",
+  "#03A9FA",
+  "#009688",
+  "#4CAF50",
+  "#8BC34A",
+  "#CDDC39",
+  "#FFEB3B",
+  "#FFC107",
+  "#FF9800",
+  "#FF5722",
+]
+
 function App() {
   return (
     <div className="app">
-      <PropertyList properties={properties} />
+      <ColorBoxes colors={colors} />
+      {/* <ToggleCounter /> */}
+      {/* <Counter /> */}
+      {/* <Clicker1 message="OH M G" buttonText= "CLICK ME PLIS" /> */}
+      {/* <Clicker /> */}
+      {/* <PropertyList properties={properties} /> */}
       {/* <ShoppingList items={data} /> */}
       {/* <Heading color="magenta" text="Welcome!!" fontSize="40px"/> 
       <Greater name="Bill" from="Elton"/>
